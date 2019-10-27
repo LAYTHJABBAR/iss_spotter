@@ -1,13 +1,13 @@
 // index.js
 const { fetchMyIP, fetchCoordsByIP, fetchISSFlyOverTimes, nextISSTimesForMyLocation } = require('./iss');
 
-// fetchMyIP((error, ipl) => {
-//   if (error) {
-//     console.log("It didn't work!" , error);
-//     return;
-//   }
-//   console.log('It worked! Returned IP:' , ipl);
-// });
+fetchMyIP((error, ipl) => {
+  if (error) {
+    console.log("It didn't work!" , error);
+    return;
+  }
+  console.log('It worked! Returned IP:' , ipl);
+});
 
 // fetchCoordsByIP('192.41.148.220', (error, myg) => {
 //     if (error) {
